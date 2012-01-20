@@ -1,0 +1,7 @@
+{
+	"name" : "hub",
+	"version" : "1.0.0",
+	"description" : "Do nothing. Just simple container.",
+	"author" : "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
+	"main" : "lib/index"
+}
