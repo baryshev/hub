@@ -1,3 +1,3 @@
 # Installation
 
-  npm install hub
+    npm install hub
