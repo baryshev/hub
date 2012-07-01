@@ -49,11 +49,12 @@
 		app = require(process.cwd() + '/index');
 	} catch(e) {}
 
-	if (app && typeof app.common === 'function') {
-		app.common(module.exports);
+	if (app && typeof app.init === 'function') {
+		app.init(module.exports);
 	}
 
 	module.exports.commander.parse(process.argv);
+
 
 	if (module.exports.commander.workers) {
 		module.exports.commander.workers = parseInt(module.exports.commander.workers, 10);
@@ -67,6 +68,10 @@
 	if (!app || typeof app.master !== 'function' || typeof app.worker !== 'function') {
 		console.log('Application not found at ' + process.cwd());
 		process.exit(1);
+	}
+
+	if (app && typeof app.common === 'function') {
+		app.common(module.exports);
 	}
 
 	if (cluster.isMaster) {
