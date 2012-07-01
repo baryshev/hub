@@ -1,3 +1,7 @@
+# About
+
+Application launcher with simple container for shared resources.
+
 # Installation
 
-    npm install hub
+    sudo npm install -g hub

@@ -1,7 +1,16 @@
 {
-	"name" : "hub",
-	"version" : "1.0.0",
-	"description" : "Do nothing. Just simple container.",
-	"author" : "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
-	"main" : "lib/index"
+	"name": "hub",
+	"description": "Application loader with simple container for shared resources",
+	"version": "2.0.0",
+	"author": "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
+	"dependencies": {
+		"commander": "0.6.1"
+	},
+	"keywords": ["hub", "container", "resources"],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/baryshev/hub.git"
+	},  "main": "index",
+	"bin": { "hub": "./bin/hub" },
+	"engines": { "node": ">= 0.6.0" }
 }
