@@ -1,7 +1,7 @@
 {
 	"name": "hub",
 	"description": "Service locator",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"author": "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
 	"dependencies": {
 		"async": "1.5.0",
