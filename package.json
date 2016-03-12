@@ -1,16 +1,32 @@
 {
-	"name": "hub",
-	"description": "Service locator",
-	"version": "5.0.3",
-	"author": "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
-	"dependencies": {
-		"async": "1.5.0",
-		"bluebird": "3.0.5"
-	},
-	"keywords": ["hub", "container", "dependency", "service locator"],
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/baryshev/hub.git"
-	},  "main": "index",
-	"engines": { "node": ">= 0.6.0" }
+  "name": "hub",
+  "description": "Service locator",
+  "version": "6.0.0",
+  "author": "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
+  "dependencies": {
+    "bluebird": "^3.3.4"
+  },
+  "keywords": [
+    "hub",
+    "container",
+    "dependency",
+    "service locator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baryshev/hub.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "mocha": "^2.4.5"
+  }
 }
