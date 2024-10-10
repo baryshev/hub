@@ -1,7 +1,7 @@
 {
   "name": "hub",
   "description": "Service locator",
-  "version": "6.1.2",
+  "version": "6.1.3",
   "author": "Vadim M. Baryshev <vadimbaryshev@gmail.com>",
   "dependencies": {
     "bluebird": "^3.3.4"
